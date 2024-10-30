@@ -1,0 +1,131 @@
+<?php defined('JOOBI_SECURE') or die('J....');
+class Data_catalog_str_front_img_view extends WDataView{
+var $yid=1092;
+var $wid='#catalog.node';
+var $type=2;
+var $params='head=1
+classes=str_front_img';
+var $namekey='str_front_img';
+var $frontend=1;
+var $subtype=210;
+var $filters=1;
+var $sid='#product.images';
+var $icon='default';
+var $rolid='#allusers';
+var $alias='product page image';
+var $useredit=1;
+var $name='1207846305OLYS';
+var $description='1470801991OOAB';
+var $wname='';
+var $wdescription='';
+var $seotitle='';
+var $seodescription='';
+var $seokeywords='';
+var $listingsA=array(
+array(
+'type'=>'output.text',
+'sid'=>'#product.images',
+'search'=>'0',
+'publish'=>1,
+'parent'=>'0',
+'params'=>'',
+'ordering'=>1,
+'map'=>'filid',
+'lid'=>3532,
+'level'=>'0',
+'hidden'=>1,
+'core'=>1,
+'did'=>'0',
+'ref_wid'=>'0',
+'rolid'=>'#allusers',
+'namekey'=>'str_front_img_product_images_filid',
+'fdid'=>'0',
+'parentdft'=>'0',
+'advsearch'=>'0',
+'advordering'=>'0',
+'xsvisible'=>'0',
+'xshidden'=>'0',
+'devicevisible'=>'',
+'devicehidden'=>'',
+'name'=>'1206961869IGND',
+'description'=>'',
+'textlink'=>'' ),
+array(
+'type'=>'output.image',
+'sid'=>'#files',
+'search'=>'0',
+'publish'=>1,
+'parent'=>'0',
+'params'=>'classes=str_image',
+'ordering'=>2,
+'map'=>'filid',
+'lid'=>3533,
+'level'=>'0',
+'hidden'=>'0',
+'core'=>1,
+'did'=>'0',
+'ref_wid'=>'0',
+'rolid'=>'#allusers',
+'namekey'=>'str_front_img_files_filid',
+'fdid'=>'0',
+'parentdft'=>'0',
+'advsearch'=>'0',
+'advordering'=>'0',
+'xsvisible'=>'0',
+'xshidden'=>'0',
+'devicevisible'=>'',
+'devicehidden'=>'',
+'name'=>'1208194156GWQH',
+'description'=>'',
+'textlink'=>'' )
+);
+
+var $filtersA=array(
+array(
+'flid'=>'#str_getthedefaultimage_frontend_1092',
+'bktbefore'=>'0',
+'sid'=>'#product.images',
+'map'=>'ordering',
+'type'=>1,
+'ref_sid'=>'0',
+'refmap'=>1,
+'bktafter'=>'0',
+'logicopr'=>'0',
+'level'=>'0',
+'publish'=>1,
+'condopr'=>29,
+'typea'=>1,
+'typeb'=>2,
+'params'=>'',
+'namekey'=>'str_getthedefaultimage_frontend_1092',
+'name'=>'',
+'ordering'=>'0',
+'requiresvalue'=>'0',
+'requirednode'=>'0',
+'rolid'=>'0',
+'isadmin'=>'0' ),
+array(
+'flid'=>'#str_get_img_eid_1092',
+'bktbefore'=>'0',
+'sid'=>'#product.images',
+'map'=>'pid',
+'type'=>1,
+'ref_sid'=>'0',
+'refmap'=>'',
+'bktafter'=>'0',
+'logicopr'=>'0',
+'level'=>'0',
+'publish'=>1,
+'condopr'=>29,
+'typea'=>1,
+'typeb'=>32,
+'params'=>'',
+'namekey'=>'str_get_img_eid_1092',
+'name'=>'',
+'ordering'=>'0',
+'requiresvalue'=>'0',
+'requirednode'=>'0',
+'rolid'=>'0',
+'isadmin'=>'0' )
+);
+}

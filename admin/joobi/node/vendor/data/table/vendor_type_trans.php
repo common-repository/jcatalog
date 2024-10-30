@@ -1,0 +1,171 @@
+<?php defined('JOOBI_SECURE') or die('J....');
+class Data_vendor_vendor_type_trans_table extends WDataTable{
+var $name='vendor_type_trans';
+var $namekey='vendor.type_trans';
+var $dbtid=3500;
+var $rolid='#allusers';
+var $type=20;
+var $pkey='vendtypid,lgid';
+var $domain=51;
+var $export=2;
+var $engine=7;
+var $node='vendor';
+var $columnsA=array(
+array(
+'dbcid'=>11161,
+'name'=>'vendtypid',
+'pkey'=>1,
+'checkval'=>'0',
+'type'=>2,
+'attributes'=>1,
+'mandatory'=>1,
+'default'=>'',
+'ordering'=>1,
+'level'=>'0',
+'rolid'=>'0',
+'extra'=>'0',
+'size'=>0.0,
+'export'=>1,
+'namekey'=>'3500vendtypid',
+'core'=>1,
+'columntype'=>'0',
+'noaudit'=>'0',
+'readable'=>'',
+'fieldtype'=>'' ),
+array(
+'dbcid'=>11162,
+'name'=>'lgid',
+'pkey'=>1,
+'checkval'=>'0',
+'type'=>25,
+'attributes'=>1,
+'mandatory'=>1,
+'default'=>'0',
+'ordering'=>2,
+'level'=>'0',
+'rolid'=>'0',
+'extra'=>'0',
+'size'=>0.0,
+'export'=>1,
+'namekey'=>'3500lgid',
+'core'=>1,
+'columntype'=>'0',
+'noaudit'=>'0',
+'readable'=>'',
+'fieldtype'=>'' ),
+array(
+'dbcid'=>11163,
+'name'=>'name',
+'pkey'=>'0',
+'checkval'=>'0',
+'type'=>14,
+'attributes'=>'0',
+'mandatory'=>1,
+'default'=>'',
+'ordering'=>3,
+'level'=>'0',
+'rolid'=>'0',
+'extra'=>'0',
+'size'=>255.0,
+'export'=>1,
+'namekey'=>'name3500',
+'core'=>1,
+'columntype'=>'0',
+'noaudit'=>'0',
+'readable'=>'',
+'fieldtype'=>'' ),
+array(
+'dbcid'=>11164,
+'name'=>'description',
+'pkey'=>'0',
+'checkval'=>'0',
+'type'=>16,
+'attributes'=>'0',
+'mandatory'=>1,
+'default'=>'',
+'ordering'=>4,
+'level'=>'0',
+'rolid'=>'0',
+'extra'=>'0',
+'size'=>0.0,
+'export'=>1,
+'namekey'=>'description3500',
+'core'=>1,
+'columntype'=>'0',
+'noaudit'=>'0',
+'readable'=>'',
+'fieldtype'=>'' ),
+array(
+'dbcid'=>11165,
+'name'=>'auto',
+'pkey'=>'0',
+'checkval'=>'0',
+'type'=>1,
+'attributes'=>'0',
+'mandatory'=>1,
+'default'=>2,
+'ordering'=>5,
+'level'=>'0',
+'rolid'=>'0',
+'extra'=>'0',
+'size'=>0.0,
+'export'=>1,
+'namekey'=>'auto3500',
+'core'=>1,
+'columntype'=>'0',
+'noaudit'=>'0',
+'readable'=>'',
+'fieldtype'=>'' ),
+array(
+'dbcid'=>11166,
+'name'=>'fromlgid',
+'pkey'=>'0',
+'checkval'=>'0',
+'type'=>1,
+'attributes'=>1,
+'mandatory'=>'0',
+'default'=>'0',
+'ordering'=>6,
+'level'=>'0',
+'rolid'=>'0',
+'extra'=>'0',
+'size'=>0.0,
+'export'=>1,
+'namekey'=>'fromlgid3500',
+'core'=>1,
+'columntype'=>'0',
+'noaudit'=>'0',
+'readable'=>'',
+'fieldtype'=>'' )
+);
+
+var $foreignsA=array(
+array(
+'dbtid'=>3500,
+'ref_dbtid'=>199,
+'name'=>'lgid',
+'name2'=>'lgid',
+'namekey'=>'FK_vendor_type_trans_lgid',
+'onupdate'=>3,
+'ondelete'=>3,
+'ordering'=>1,
+'ref_table'=>'#library#language_node' ),
+array(
+'dbtid'=>3500,
+'ref_dbtid'=>3499,
+'name'=>'vendtypid',
+'name2'=>'vendtypid',
+'namekey'=>'FK_vendor_type_trans_vendtypid',
+'onupdate'=>3,
+'ondelete'=>3,
+'ordering'=>2,
+'ref_table'=>'#vendor#vendor_type' )
+);
+
+var $contraintsA=array(
+array(
+'ctid'=>66378,
+'type'=>3,
+'namekey'=>'PK_vendor_type_trans' )
+);
+}

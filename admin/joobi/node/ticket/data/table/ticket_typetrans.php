@@ -1,0 +1,171 @@
+<?php defined('JOOBI_SECURE') or die('J....');
+class Data_ticket_ticket_typetrans_table extends WDataTable{
+var $name='ticket_typetrans';
+var $namekey='ticket.typetrans';
+var $dbtid=1012;
+var $rolid='#allusers';
+var $type=20;
+var $pkey='tktypeid,lgid';
+var $domain=51;
+var $export=2;
+var $engine=7;
+var $node='ticket';
+var $columnsA=array(
+array(
+'dbcid'=>9365,
+'name'=>'tktypeid',
+'pkey'=>1,
+'checkval'=>'0',
+'type'=>2,
+'attributes'=>1,
+'mandatory'=>1,
+'default'=>'',
+'ordering'=>1,
+'level'=>'0',
+'rolid'=>'0',
+'extra'=>1,
+'size'=>0.0,
+'export'=>1,
+'namekey'=>'1012tktypeid',
+'core'=>1,
+'columntype'=>'0',
+'noaudit'=>'0',
+'readable'=>'',
+'fieldtype'=>'' ),
+array(
+'dbcid'=>9372,
+'name'=>'lgid',
+'pkey'=>1,
+'checkval'=>'0',
+'type'=>1,
+'attributes'=>1,
+'mandatory'=>1,
+'default'=>'0',
+'ordering'=>2,
+'level'=>'0',
+'rolid'=>'0',
+'extra'=>'0',
+'size'=>0.0,
+'export'=>1,
+'namekey'=>'lgid1012',
+'core'=>1,
+'columntype'=>'0',
+'noaudit'=>'0',
+'readable'=>'',
+'fieldtype'=>'' ),
+array(
+'dbcid'=>9373,
+'name'=>'auto',
+'pkey'=>'0',
+'checkval'=>1,
+'type'=>1,
+'attributes'=>1,
+'mandatory'=>1,
+'default'=>2,
+'ordering'=>3,
+'level'=>'0',
+'rolid'=>'0',
+'extra'=>'0',
+'size'=>0.0,
+'export'=>1,
+'namekey'=>'auto1012',
+'core'=>1,
+'columntype'=>'0',
+'noaudit'=>'0',
+'readable'=>'',
+'fieldtype'=>'' ),
+array(
+'dbcid'=>9374,
+'name'=>'fromlgid',
+'pkey'=>'0',
+'checkval'=>1,
+'type'=>1,
+'attributes'=>1,
+'mandatory'=>1,
+'default'=>'0',
+'ordering'=>4,
+'level'=>'0',
+'rolid'=>'0',
+'extra'=>'0',
+'size'=>0.0,
+'export'=>1,
+'namekey'=>'fromlgid1012',
+'core'=>1,
+'columntype'=>'0',
+'noaudit'=>'0',
+'readable'=>'',
+'fieldtype'=>'' ),
+array(
+'dbcid'=>9375,
+'name'=>'name',
+'pkey'=>'0',
+'checkval'=>1,
+'type'=>14,
+'attributes'=>'0',
+'mandatory'=>1,
+'default'=>'',
+'ordering'=>5,
+'level'=>'0',
+'rolid'=>'0',
+'extra'=>'0',
+'size'=>255.0,
+'export'=>1,
+'namekey'=>'name1012',
+'core'=>1,
+'columntype'=>'0',
+'noaudit'=>'0',
+'readable'=>'',
+'fieldtype'=>'' ),
+array(
+'dbcid'=>9376,
+'name'=>'description',
+'pkey'=>'0',
+'checkval'=>1,
+'type'=>16,
+'attributes'=>'0',
+'mandatory'=>1,
+'default'=>'',
+'ordering'=>6,
+'level'=>'0',
+'rolid'=>'0',
+'extra'=>'0',
+'size'=>0.0,
+'export'=>1,
+'namekey'=>'description1012',
+'core'=>1,
+'columntype'=>'0',
+'noaudit'=>'0',
+'readable'=>'',
+'fieldtype'=>'' )
+);
+
+var $foreignsA=array(
+array(
+'dbtid'=>1012,
+'ref_dbtid'=>1010,
+'name'=>'tktypeid',
+'name2'=>'tktypeid',
+'namekey'=>'FK_ticket_type_tktypeid',
+'onupdate'=>3,
+'ondelete'=>3,
+'ordering'=>1,
+'ref_table'=>'#ticket#ticket_type' ),
+array(
+'dbtid'=>1012,
+'ref_dbtid'=>199,
+'name'=>'lgid',
+'name2'=>'lgid',
+'namekey'=>'FK_ticket_typetrans_lgid',
+'onupdate'=>1,
+'ondelete'=>3,
+'ordering'=>2,
+'ref_table'=>'#library#language_node' )
+);
+
+var $contraintsA=array(
+array(
+'ctid'=>65994,
+'type'=>3,
+'namekey'=>'PK_ticket_typetrans' )
+);
+}

@@ -1,0 +1,129 @@
+<?php defined('JOOBI_SECURE') or die('J....');
+class Data_mailbox_mailbox_handled_table extends WDataTable{
+var $name='emanager_handled';
+var $namekey='mailbox.handled';
+var $dbtid=736;
+var $rolid='#allusers';
+var $type=30;
+var $pkey='email,type';
+var $suffix='handled';
+var $group='emanager';
+var $domain=51;
+var $export=2;
+var $engine=7;
+var $node='mailbox';
+var $columnsA=array(
+array(
+'dbcid'=>7043,
+'name'=>'email',
+'pkey'=>1,
+'checkval'=>'0',
+'type'=>14,
+'attributes'=>'0',
+'mandatory'=>1,
+'default'=>'',
+'ordering'=>1,
+'level'=>'0',
+'rolid'=>'0',
+'extra'=>'0',
+'size'=>250.0,
+'export'=>1,
+'namekey'=>'736email',
+'core'=>1,
+'columntype'=>'0',
+'noaudit'=>'0',
+'readable'=>'',
+'fieldtype'=>'' ),
+array(
+'dbcid'=>7044,
+'name'=>'type',
+'pkey'=>1,
+'checkval'=>'0',
+'type'=>4,
+'attributes'=>1,
+'mandatory'=>1,
+'default'=>'',
+'ordering'=>2,
+'level'=>'0',
+'rolid'=>'0',
+'extra'=>'0',
+'size'=>0.0,
+'export'=>1,
+'namekey'=>'736type',
+'core'=>1,
+'columntype'=>'0',
+'noaudit'=>'0',
+'readable'=>'',
+'fieldtype'=>'' ),
+array(
+'dbcid'=>7045,
+'name'=>'created',
+'pkey'=>'0',
+'checkval'=>1,
+'type'=>4,
+'attributes'=>1,
+'mandatory'=>1,
+'default'=>'',
+'ordering'=>3,
+'level'=>'0',
+'rolid'=>'0',
+'extra'=>'0',
+'size'=>0.0,
+'export'=>1,
+'namekey'=>'created736',
+'core'=>1,
+'columntype'=>1,
+'noaudit'=>'0',
+'readable'=>'',
+'fieldtype'=>'' ),
+array(
+'dbcid'=>7046,
+'name'=>'modified',
+'pkey'=>'0',
+'checkval'=>1,
+'type'=>4,
+'attributes'=>1,
+'mandatory'=>1,
+'default'=>'',
+'ordering'=>4,
+'level'=>'0',
+'rolid'=>'0',
+'extra'=>'0',
+'size'=>0.0,
+'export'=>1,
+'namekey'=>'modified736',
+'core'=>1,
+'columntype'=>1,
+'noaudit'=>'0',
+'readable'=>'',
+'fieldtype'=>'' ),
+array(
+'dbcid'=>7047,
+'name'=>'total',
+'pkey'=>'0',
+'checkval'=>1,
+'type'=>1,
+'attributes'=>1,
+'mandatory'=>1,
+'default'=>1,
+'ordering'=>5,
+'level'=>'0',
+'rolid'=>'0',
+'extra'=>'0',
+'size'=>0.0,
+'export'=>1,
+'namekey'=>'number736',
+'core'=>1,
+'columntype'=>'0',
+'noaudit'=>'0',
+'readable'=>'',
+'fieldtype'=>'' )
+);
+
+var $contraintsA=array(
+array(
+'ctid'=>65666,
+'type'=>3,
+'namekey'=>'PK_emanager_handled' )
+);
+}

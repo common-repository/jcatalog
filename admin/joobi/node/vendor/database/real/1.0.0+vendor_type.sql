@@ -1,0 +1,20 @@
+CREATE TABLE IF NOT EXISTS `#__vendor_type` (
+ `vendtypid` smallint(5) unsigned NOT NULL AUTO_INCREMENT,
+ `namekey` varchar(100) NOT NULL,
+ `alias` varchar(150) NOT NULL,
+ `type` tinyint(3) unsigned NOT NULL DEFAULT '1',
+ `rolid` smallint(5) unsigned NOT NULL DEFAULT '13',
+ `uid` int(10) unsigned NOT NULL DEFAULT '0',
+ `modifiedby` int(10) unsigned NOT NULL DEFAULT '0',
+ `core` tinyint(3) unsigned NOT NULL DEFAULT '0',
+ `publish` tinyint(4) NOT NULL DEFAULT '0',
+ `created` int(10) unsigned NOT NULL DEFAULT '0',
+ `modified` int(10) unsigned NOT NULL DEFAULT '0',
+ `filid` int(10) unsigned NOT NULL DEFAULT '0',
+ `params` text NOT NULL,
+ `predefined` text NOT NULL,
+ `ordering` smallint(5) unsigned NOT NULL DEFAULT '1',
+ `affid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+ `color` varchar(10) NOT NULL,
+ PRIMARY KEY (`vendtypid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 DEFAULT COLLATE=utf8mb4_unicode_ci;

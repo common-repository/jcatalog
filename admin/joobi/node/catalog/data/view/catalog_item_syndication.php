@@ -1,0 +1,140 @@
+<?php defined('JOOBI_SECURE') or die('J....');
+class Data_catalog_catalog_item_syndication_view extends WDataView{
+var $yid=501311;
+var $wid='#catalog.node';
+var $type=51;
+var $params='subtitle=1
+autosave=1
+mtype=image
+cssfile=1';
+var $namekey='catalog_item_syndication';
+var $menu=13;
+var $frontend=1;
+var $level=50;
+var $form=1;
+var $icon='category';
+var $rolid='#vendor';
+var $alias='Choose Category';
+var $useredit=1;
+var $name='1314356569KRWI';
+var $description='1470801991ONZV';
+var $wname='';
+var $wdescription='';
+var $seotitle='';
+var $seodescription='';
+var $seokeywords='';
+var $formsA=array(
+array(
+'type'=>'output.select',
+'sid'=>'0',
+'required'=>1,
+'readonly'=>'0',
+'publish'=>1,
+'parent'=>'0',
+'params'=>'',
+'ordering'=>1,
+'map'=>'x[catid]',
+'level'=>50,
+'initial'=>'',
+'hidden'=>'0',
+'fid'=>2458956,
+'core'=>1,
+'did'=>'#catalog#catalog_vendor_category',
+'private'=>'0',
+'area'=>'',
+'ref_yid'=>'0',
+'frame'=>'0',
+'rolid'=>'#vendor',
+'namekey'=>'catalog_item_syndication_catid',
+'fdid'=>'0',
+'parentdft'=>'0',
+'checktype'=>'0',
+'xsvisible'=>'0',
+'xshidden'=>'0',
+'devicevisible'=>'',
+'devicehidden'=>'',
+'name'=>'1314356569KRWI',
+'description'=>'1314356574CWTZ' ),
+array(
+'type'=>'output.text',
+'sid'=>'0',
+'required'=>'0',
+'readonly'=>'0',
+'publish'=>1,
+'parent'=>'0',
+'params'=>'',
+'ordering'=>2,
+'map'=>'x[eid]',
+'level'=>50,
+'initial'=>'',
+'hidden'=>1,
+'fid'=>2458955,
+'core'=>1,
+'did'=>'0',
+'private'=>'0',
+'area'=>'',
+'ref_yid'=>'0',
+'frame'=>'0',
+'rolid'=>'#vendor',
+'namekey'=>'catalog_item_syndication_eid',
+'fdid'=>'0',
+'parentdft'=>'0',
+'checktype'=>'0',
+'xsvisible'=>'0',
+'xshidden'=>'0',
+'devicevisible'=>'',
+'devicehidden'=>'',
+'name'=>'1206961869IGND',
+'description'=>'' )
+);
+
+var $menusA=array(
+array(
+'type'=>4,
+'publish'=>1,
+'parent'=>'0',
+'params'=>'formvalidation=1',
+'ordering'=>1,
+'level'=>50,
+'icon'=>'save',
+'action'=>'syndicate',
+'mid'=>8424,
+'private'=>'0',
+'position'=>'0',
+'core'=>1,
+'rolid'=>'#vendor',
+'namekey'=>'catalog_item_syndication_syndicate',
+'faicon'=>'',
+'color'=>'',
+'xsvisible'=>'0',
+'xshidden'=>'0',
+'devicevisible'=>'',
+'devicehidden'=>'',
+'name'=>'1242282449PIPC',
+'description'=>'' ),
+array(
+'type'=>5,
+'publish'=>1,
+'parent'=>'0',
+'params'=>'ajax=1
+popclose=1',
+'ordering'=>2,
+'level'=>50,
+'icon'=>'cancel',
+'action'=>'cancel',
+'mid'=>8425,
+'private'=>'0',
+'position'=>'0',
+'core'=>1,
+'rolid'=>'#vendor',
+'namekey'=>'catalog_item_syndication_cancel',
+'faicon'=>'',
+'color'=>'',
+'xsvisible'=>'0',
+'xshidden'=>'0',
+'devicevisible'=>'',
+'devicehidden'=>'',
+'name'=>'1228820287MBVC',
+'description'=>'' )
+);
+}
